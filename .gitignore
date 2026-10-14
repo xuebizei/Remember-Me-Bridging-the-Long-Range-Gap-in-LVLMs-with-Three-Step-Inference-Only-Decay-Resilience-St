@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+*.log
+
+# COCO images and generated answers stay local
+playground/data/eval/pope/val2014/
+playground/data/eval/pope/answers/
+*.safetensors
+*.bin
+*.pt
