@@ -1,8 +1,6 @@
-# LLaVA POPE with semantic kernels
+# The Code of "Remember-Me-Bridging-the-Long-Range-Gap-in-LVLMs-with-Three-Step-Inference-Only-Decay-Resilience-strategies"
 
-Evaluation code for running LLaVA-1.5 on [POPE](https://github.com/AoiDragon/POPE) with a modified attention forward on layer 31.
-
-Before softmax, the attention scores are reweighted by a Gaussian kernel and a rational-quadratic (heavy-tailed) kernel. Query-key cosine similarity scales each kernel bandwidth between 0.5x and 1.5x. The direct semantic-similarity term is not added as a third weight.
+Evaluation code for running LLaVA-1.5 on [POPE](https://github.com/AoiDragon/POPE). Before softmax, layer 31 reweights attention scores with a Gaussian kernel and a rational-quadratic kernel. Query-key cosine similarity scales each kernel bandwidth between 0.5x and 1.5x.
 
 This repository is derived from [LLaVA](https://github.com/haotian-liu/LLaVA) and keeps its Apache-2.0 license.
 
